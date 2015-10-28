@@ -1,0 +1,28 @@
+{
+  "name": "setval",
+  "version": "1.0.0",
+  "description": "setval(object, 'path.to.property', 10) // => return undefined, but sets object.path.to.property = 10 (creates missing paths items on the fly)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serapath/setval.git"
+  },
+  "keywords": [
+    "set",
+    "setter",
+    "path",
+    "object"
+  ],
+  "author": "serapath <dev@serapath.de> (http://www.github.com/serapath)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serapath/setval/issues"
+  },
+  "homepage": "https://github.com/serapath/setval#readme",
+  "dependencies": {
+    "isobject": "^2.0.0"
+  }
+}
