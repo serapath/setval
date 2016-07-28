@@ -1,6 +1,6 @@
 {
   "name": "setval",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "setval(object, 'path.to.property', 10) // => return undefined, but sets object.path.to.property = 10 (creates missing paths items on the fly)",
   "main": "index.js",
   "scripts": {
