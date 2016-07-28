@@ -5,4 +5,5 @@ module.exports = function setval (root, path, value, delimiter) {
     t = t[key] = isobject(t[key]) ? t[key] : {}
   })
   t[last] = value
+  return path
 }
