@@ -1,5 +1,5 @@
 # setval
-write values to an object by using keys like in a dictionary
+write values to a nested object like to a flat key value store
 
 # usage
 `npm install setval`

@@ -1,7 +1,7 @@
 {
   "name": "setval",
-  "version": "4.0.0",
-  "description": "setval(object, 'path.to.property', 10) // => return undefined, but sets object.path.to.property = 10 (creates missing paths items on the fly)",
+  "version": "4.0.1",
+  "description": "write values to a nested object like to a flat key value store",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js"
