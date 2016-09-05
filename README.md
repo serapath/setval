@@ -10,9 +10,9 @@ var state = { a: { b: [5,6,7] }, '': 3 }
 setval(state, undefined, { x: 5}) // => { a: { b: [5,6,7] }, '': 3 }
 setval(state) // => { a: { b: [5,6,7] }, '': 3 }
 setval(state, '') // => { a: { b: [5,6,7] } }
-setval(state, '', 6) // => { '': 6, a: { b: [5,6,7] } }
+setval(state, '', 6) // => { a: { b: [5,6,7] }, '': 6 }
 setval(state, '/') // => { '': 6, a: { b: [5,6,7] } }
-setval(state, '/', 'yay') // => { '': { '': 'yay' }, a: { b: [5,6,7] } }
+setval(state, '/', 'yay') // => { a: { b: [5,6,7] }, '': { '': 'yay' } }
 
 var state = { a: { b: [5,6,7] }, '': 3 }
 setval(state, 'a', 'm3h') // => { '': 3, a: 'm3h' }
