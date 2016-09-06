@@ -2,7 +2,6 @@ var xObject = require('x-is-object')
 var xString = require('x-is-string')
 var xDTypeArray = require('x-is-ducktype-array')
 var dsplit = require('dsplit')
-var djoin = require('djoin')
 module.exports = setval
 function setval (root, path, value, delimiter) {
   var keys = xDTypeArray(xString,path) ? path : dsplit(path, delimiter)

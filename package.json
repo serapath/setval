@@ -1,6 +1,6 @@
 {
   "name": "setval",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "write values to a nested object like to a flat key value store",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/serapath/setval#readme",
   "dependencies": {
-    "djoin": "^4.0.0",
     "dsplit": "^4.0.0",
     "x-is-ducktype-array": "^1.0.1",
     "x-is-object": "^0.1.0",
