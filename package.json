@@ -1,6 +1,6 @@
 {
   "name": "setval",
-  "version": "4.0.2",
+  "version": "5.0.0",
   "description": "write values to a nested object like to a flat key value store",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,9 @@
   "dependencies": {
     "djoin": "^4.0.0",
     "dsplit": "^4.0.0",
-    "x-is-object": "^0.1.0"
+    "x-is-ducktype-array": "^1.0.1",
+    "x-is-object": "^0.1.0",
+    "x-is-string": "^0.1.0"
   },
   "devDependencies": {
     "tape": "^4.6.0"

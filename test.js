@@ -51,9 +51,15 @@ test('setval basics', function (t) {
 })
 
 test('setval normal', function (t) {
-  t.plan(5)
+  t.plan(7)
   var state = { }
   console.log('\nstate =',JSON.stringify(state)+'\n')
+  setval(state, ['a','b'], 'hello world')
+  t.deepEqual(state, { a: { b: 'hello world' } }, "setval(state, ['a','b'], 'hello world')")
+  console.log('      =',JSON.stringify(state)+'\n')
+  setval(state, ['a','b'])
+  t.deepEqual(state, { a: {} }, "setval(state, ['a','b'])")
+  console.log('      =',JSON.stringify(state)+'\n')
   setval(state, 'a/b', 'hello world')
   t.deepEqual(state, { a: { b: 'hello world' } }, "setval(state, 'a/b', 'hello world')")
   console.log('      =',JSON.stringify(state)+'\n')
