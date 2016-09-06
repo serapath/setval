@@ -6,9 +6,9 @@ module.exports = setval
 function setval (obj, path, value, delimiter) {
   if (xObject(obj)) {
     var keys = xDTypeArray(xString,path) ? path : dsplit(path, delimiter)
-    var last = keys[keys.length-1]
+    var len=keys.length-1, last = keys[len]
     if (last !== undefined) {
-      for(var k,r,o,n,t=obj,len=keys.length-1,idx=0; idx<len; idx++) {
+      for(var k,r,o,n,t=obj,idx=0; idx<len; idx++) {
         k = keys[idx]
         if (o) o = o[k] = {}
         else if (xObject(t[k])) t = t[k]
