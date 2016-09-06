@@ -6,7 +6,8 @@ write values to a nested object like to a flat key value store
 
 ```js
 var setval = require('setval')
-// setval(state, path, value, [delimiter]) => returns path
+// setval(state, path, value, [delimiter])
+// return `path` or `undefined` if set was not successful
 var state = { a: { b: [5,6,7] }, '': 3 }
 setval(state, undefined, { x: 5}) // => { a: { b: [5,6,7] }, '': 3 }
 setval(state) // => { a: { b: [5,6,7] }, '': 3 }
