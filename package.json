@@ -1,6 +1,6 @@
 {
   "name": "setval",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "write values to a nested object like to a flat key value store",
   "main": "index.js",
   "scripts": {
